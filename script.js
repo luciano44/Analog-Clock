@@ -4,13 +4,16 @@ function updateTime(pointer, pointerClass, hoursTimesX) {
 
     let time;
 
-    if (pointer == "h") time = date.getHours();
+    if (pointer == "h")
+      time = +`${date.getHours()}.${~~(date.getMinutes() * 0.16666666)}`;
     if (pointer == "m") time = date.getMinutes();
     if (pointer == "s") time = date.getSeconds();
 
     const timeCircle = document.querySelector(pointerClass);
 
     timeCircle.style.transform = `rotate(${time * hoursTimesX}deg)`;
+
+    console.log(time);
   }, 100);
 }
 
@@ -24,6 +27,8 @@ function updateDigitalClock() {
     let m = date.getMinutes();
     let s = date.getSeconds();
 
+    if (h < 10) h = `0${h}`;
+    if (m < 10) m = `0${m}`;
     if (s < 10) s = `0${s}`;
 
     time.innerText = `${h}:${m}:${s}`;

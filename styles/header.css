@@ -22,7 +22,4 @@ header .digital-clock p {
 
 .seconds {
   position: relative;
-  /* filter: opacity(0.25);
-  top: -15px; */
-  /* animation: timeUpdate 0.25s; */
 }

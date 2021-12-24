@@ -15,7 +15,7 @@
   position: absolute;
   bottom: 0;
   right: 2px;
-  height: 225px;
+  height: var(--seconds-indicator-size);
   width: 1px;
   background-color: white;
 }

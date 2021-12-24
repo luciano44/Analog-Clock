@@ -1,4 +1,5 @@
 @import "./header.css";
+@import "./sizes.css";
 @import "./misc.css";
 @import "./clock/hours.css";
 @import "./clock/minutes.css";

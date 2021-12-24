@@ -12,8 +12,8 @@ body {
 }
 
 .clock {
-  min-height: 500px;
-  min-width: 500px;
+  min-height: var(--clock-size);
+  min-width: var(--clock-size);
   border: 2px solid white;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.219);
   border-radius: 50%;
@@ -53,7 +53,7 @@ body {
 
 .indicator-base {
   position: absolute;
-  height: 500px;
+  height: var(--clock-size);
   width: 10px;
   display: flex;
   justify-content: center;
@@ -63,13 +63,13 @@ body {
 .indicator-mark {
   position: absolute;
   background: white;
-  height: 10px;
-  width: 3px;
+  height: var(--indicator-height);
+  width: var(--indicator-width);
 }
 
 .big-indicator {
-  height: 20px;
-  width: 10px;
+  height: 25px;
+  width: 6px;
 }
 
 /* ------------------- ANIMATION */

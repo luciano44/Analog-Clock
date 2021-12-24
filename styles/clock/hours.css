@@ -15,7 +15,7 @@
   position: absolute;
   bottom: 0;
   right: 2px;
-  height: 150px;
+  height: var(--hours-indicator-size);
   width: 2px;
   background-color: white;
 }

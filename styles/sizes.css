@@ -1,0 +1,31 @@
+:root {
+  --clock-size: 500px;
+  --hours-indicator-size: 150px;
+  --minutes-indicator-size: 190px;
+  --seconds-indicator-size: 225px;
+  --indicator-height: 10px;
+  --indicator-width: 3px;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --clock-size: 400px;
+    --hours-indicator-size: 110px;
+    --minutes-indicator-size: 150px;
+    --seconds-indicator-size: 175px;
+    --indicator-height: 8px;
+    --indicator-width: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --clock-size: 250px;
+    --hours-indicator-size: 70px;
+    --minutes-indicator-size: 90px;
+    --seconds-indicator-size: 100px;
+
+    --indicator-height: 6px;
+    --indicator-width: 1px;
+  }
+}

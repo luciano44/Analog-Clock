@@ -1,0 +1,21 @@
+/*---------------------------------  second   */
+
+.second-circle {
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.second-circle .stick {
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  height: 225px;
+  width: 1px;
+  background-color: white;
+}

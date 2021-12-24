@@ -1,0 +1,94 @@
+/* MISC  */
+
+body {
+  margin: 0;
+  background: #333;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  min-height: 500px;
+  min-width: 500px;
+  border: 2px solid white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.219);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------->> Arrow  */
+
+.arrow {
+  height: 9px;
+  width: 9px;
+  top: -7px;
+  right: -4px;
+  transform: scaleY(3);
+  border: 5px solid white;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+/*-------------------------|  indicators */
+
+.indicators {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator-base {
+  position: absolute;
+  height: 500px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.indicator-mark {
+  position: absolute;
+  background: white;
+  height: 10px;
+  width: 3px;
+}
+
+.big-indicator {
+  height: 20px;
+  width: 10px;
+}
+
+/* ------------------- ANIMATION */
+
+@keyframes timeUpdate {
+  0% {
+    filter: opacity(0.5);
+    top: -5px;
+  }
+  10% {
+    top: 0px;
+    filter: opacity(1);
+  }
+  90% {
+    top: 0px;
+    filter: opacity(1);
+  }
+  100% {
+    top: 5px;
+    filter: opacity(0.5);
+  }
+}

@@ -1,0 +1,5 @@
+@import "./header.css";
+@import "./misc.css";
+@import "./clock/hours.css";
+@import "./clock/minutes.css";
+@import "./clock/seconds.css";

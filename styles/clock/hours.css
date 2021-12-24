@@ -1,0 +1,21 @@
+/*------------------------------------  HOUR   */
+
+.hour-circle {
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transform: rotate(90deg);
+}
+
+.hour-circle .stick {
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  height: 150px;
+  width: 2px;
+  background-color: white;
+}

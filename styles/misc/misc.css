@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background: #333;
+  background: #222;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -14,12 +14,13 @@ body {
 .clock {
   min-height: var(--clock-size);
   min-width: var(--clock-size);
-  border: 2px solid white;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.219);
+  border: 4px solid var(--main-color);
+  box-shadow: 0 0 0 3px rgb(0, 0, 0), 0 0 25px black, inset 0 0 250px black;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(7px);
 }
 
 /* ----------------------->> Arrow  */
@@ -29,8 +30,8 @@ body {
   width: 9px;
   top: -7px;
   right: -4px;
-  transform: scaleY(3);
-  border: 5px solid white;
+  transform: scaleY(2);
+  border: 5px solid var(--main-color);
   border-right-color: transparent;
   border-left-color: transparent;
   border-top-color: transparent;
@@ -44,7 +45,7 @@ body {
   position: absolute;
   height: 10px;
   width: 10px;
-  background: white;
+  background: var(--main-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -62,7 +63,7 @@ body {
 
 .indicator-mark {
   position: absolute;
-  background: white;
+  background: var(--main-color);
   height: var(--indicator-height);
   width: var(--indicator-width);
 }
@@ -70,6 +71,20 @@ body {
 .big-indicator {
   height: 25px;
   width: 6px;
+}
+
+/* ---------------- --- BACKGROUND */
+
+.background {
+  position: fixed;
+  z-index: -9999;
+  filter: opacity(0.05);
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: lightblue;
+  background-image: url(https://img.freepik.com/free-vector/black-white-hypnotic-background-abstract-seamless-pattern-illustration_118124-3765.jpg?size=626&ext=jpg);
+  background-repeat: repeat;
 }
 
 /* ------------------- ANIMATION */
@@ -91,4 +106,46 @@ body {
     top: 5px;
     filter: opacity(0.5);
   }
+}
+
+/* ------------------- LOGO */
+
+.lr-logo {
+  position: fixed;
+  background: linear-gradient(rgb(212, 0, 0), red);
+  height: 60px;
+  width: 50px;
+  top: -10px;
+  margin-right: 50%;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.lr-logo:hover {
+  top: -2px;
+}
+
+.lr-logo::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border: 25px solid red;
+  border-bottom-color: transparent;
+  box-sizing: border-box;
+  top: 60px;
+}
+
+.lr-logo a {
+  height: 100%;
+  width: 100%;
+}
+
+.lr-logo img {
+  height: 80%;
+  position: absolute;
+  top: 30px;
+  filter: invert(1);
 }

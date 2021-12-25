@@ -12,8 +12,6 @@ function updateTime(pointer, pointerClass, hoursTimesX) {
     const timeCircle = document.querySelector(pointerClass);
 
     timeCircle.style.transform = `rotate(${time * hoursTimesX}deg)`;
-
-    console.log(time);
   }, 100);
 }
 
@@ -35,21 +33,22 @@ function updateDigitalClock() {
   }, 100);
 }
 
-updateDigitalClock();
-
 //------------ Updates Hours, Minutes and Seconds of Analog Clock
 
 updateTime("h", ".hour-circle", 30);
 updateTime("m", ".minute-circle", 6);
 updateTime("s", ".second-circle", 6);
 
-//------------ Updates Hours, Minutes and Seconds of Digital Clock
+//------------ Updates  Digital Clock
 
-const indicators = document.querySelectorAll(".indicator-base");
-let indDeg = 0;
-let bigMark = 5;
+updateDigitalClock();
 
 //---------- Position indicators
+
+const indicators = document.querySelectorAll(".indicator-base");
+
+let indDeg = 0;
+let bigMark = 5;
 
 indicators.forEach((i) => {
   i.style.transform = `rotate(${indDeg}deg)`;

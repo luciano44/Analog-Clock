@@ -1,6 +1,7 @@
-@import "./header.css";
-@import "./sizes.css";
-@import "./misc.css";
+@import "./misc/colors.css";
+@import "./misc/header.css";
+@import "./misc/sizes.css";
+@import "./misc/misc.css";
 @import "./clock/hours.css";
 @import "./clock/minutes.css";
 @import "./clock/seconds.css";

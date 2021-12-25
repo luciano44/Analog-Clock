@@ -1,7 +1,7 @@
 /*-----------------------------------  minute   */
 
 .minute-circle {
-  background-color: white;
+  background-color: var(--main-color);
   height: 5px;
   width: 5px;
   border-radius: 100%;
@@ -17,5 +17,5 @@
   right: 2px;
   height: var(--minutes-indicator-size);
   width: 1px;
-  background-color: white;
+  background-color: var(--main-color);
 }

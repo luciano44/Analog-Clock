@@ -21,8 +21,8 @@
 @media (max-width: 400px) {
   :root {
     --clock-size: 250px;
-    --hours-indicator-size: 70px;
-    --minutes-indicator-size: 90px;
+    --hours-indicator-size: 65px;
+    --minutes-indicator-size: 85px;
     --seconds-indicator-size: 100px;
 
     --indicator-height: 6px;
